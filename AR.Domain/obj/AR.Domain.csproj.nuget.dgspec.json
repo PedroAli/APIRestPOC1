@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C-Alura\\APIRest\\AS.Apresentacao\\AS.Apresentacao.csproj": {}
+    "D:\\C-Alura\\APIRest\\AR.Domain\\AR.Domain.csproj": {}
   },
   "projects": {
-    "D:\\C-Alura\\APIRest\\AS.Apresentacao\\AS.Apresentacao.csproj": {
+    "D:\\C-Alura\\APIRest\\AR.Domain\\AR.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C-Alura\\APIRest\\AS.Apresentacao\\AS.Apresentacao.csproj",
-        "projectName": "AS.Apresentacao",
-        "projectPath": "D:\\C-Alura\\APIRest\\AS.Apresentacao\\AS.Apresentacao.csproj",
+        "projectUniqueName": "D:\\C-Alura\\APIRest\\AR.Domain\\AR.Domain.csproj",
+        "projectName": "AR.Domain",
+        "projectPath": "D:\\C-Alura\\APIRest\\AR.Domain\\AR.Domain.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "D:\\C-Alura\\APIRest\\AS.Apresentacao\\obj\\",
+        "outputPath": "D:\\C-Alura\\APIRest\\AR.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -60,10 +60,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.10, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
             }
           },
           "imports": [
@@ -77,9 +73,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
