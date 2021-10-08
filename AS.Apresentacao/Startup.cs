@@ -1,7 +1,11 @@
+using AR.Data;
+using AR.Data.Imp;
+using AR.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,7 +25,7 @@ namespace AS.Apresentacao
             Configuration = configuration;
         }
 
-       // teste
+       
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -33,6 +37,11 @@ namespace AS.Apresentacao
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AS.Apresentacao", Version = "v1" });
             });
+
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+
+            services.AddDbContext<ContextoPrincipal>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("ApiRestConnectionString")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

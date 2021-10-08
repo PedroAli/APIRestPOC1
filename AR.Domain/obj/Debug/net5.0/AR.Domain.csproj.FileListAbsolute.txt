@@ -1,0 +1,15 @@
+D:\C-Alura\APIRest\AR.Domain\bin\Debug\net5.0\AR.Domain.deps.json
+D:\C-Alura\APIRest\AR.Domain\bin\Debug\net5.0\AR.Domain.runtimeconfig.json
+D:\C-Alura\APIRest\AR.Domain\bin\Debug\net5.0\AR.Domain.runtimeconfig.dev.json
+D:\C-Alura\APIRest\AR.Domain\bin\Debug\net5.0\AR.Domain.dll
+D:\C-Alura\APIRest\AR.Domain\bin\Debug\net5.0\ref\AR.Domain.dll
+D:\C-Alura\APIRest\AR.Domain\bin\Debug\net5.0\AR.Domain.pdb
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.csproj.AssemblyReference.cache
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.AssemblyInfoInputs.cache
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.AssemblyInfo.cs
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.csproj.CoreCompileInputs.cache
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.dll
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\ref\AR.Domain.dll
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.pdb
+D:\C-Alura\APIRest\AR.Domain\obj\Debug\net5.0\AR.Domain.genruntimeconfig.cache

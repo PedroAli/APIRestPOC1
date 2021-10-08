@@ -1593,6 +1593,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "AR.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AR.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10"
+        },
+        "compile": {
+          "bin/placeholder/AR.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AR.Data.dll": {}
+        }
+      },
+      "AR.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10"
+        },
+        "compile": {
+          "bin/placeholder/AR.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AR.Domain.dll": {}
+        }
       }
     }
   },
@@ -5922,10 +5950,22 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "AR.Data/1.0.0": {
+      "type": "project",
+      "path": "../AR.Data/AR.Data.csproj",
+      "msbuildProject": "../AR.Data/AR.Data.csproj"
+    },
+    "AR.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AR.Domain/AR.Domain.csproj",
+      "msbuildProject": "../AR.Domain/AR.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AR.Data >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.10",
@@ -5965,7 +6005,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C-Alura\\APIRest\\AR.Data\\AR.Data.csproj": {
+              "projectPath": "D:\\C-Alura\\APIRest\\AR.Data\\AR.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5978,6 +6022,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.10, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
