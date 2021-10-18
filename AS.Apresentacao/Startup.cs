@@ -40,6 +40,8 @@ namespace AS.Apresentacao
 
             services.AddScoped<IClienteRepository, ClienteRepository>();
 
+            services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+
             services.AddDbContext<ContextoPrincipal>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("ApiRestConnectionString")));
         }

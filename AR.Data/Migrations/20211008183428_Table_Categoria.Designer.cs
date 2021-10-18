@@ -4,14 +4,16 @@ using AR.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AR.Data.Migrations
 {
     [DbContext(typeof(ContextoPrincipal))]
-    partial class ContextoPrincipalModelSnapshot : ModelSnapshot
+    [Migration("20211008183428_Table_Categoria")]
+    partial class Table_Categoria
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
